@@ -1,0 +1,25 @@
+Minutes of Meeting
+Date: 25/07/2024
+Time: 14:45 - 16:15
+Attendees:
+Lasse, Delo, Sayli
+Points that we discussed
+Discussion Points:
+
+Table Updates
+Reviewed and updated the tables as planned.
+Prepared the materials required for the upcoming presentation.
+Focused mainly on completing the endpoints.
+Action Points:
+Post-Presentation Tasks:
+Update User Stories:
+Rephrase the current user stories for clarity.
+UML Diagram Update:
+Revise the UML diagram to include the updated user interactions(dont know the exact app which Eyong mentioned).
+Endpoint Revisions:
+Modify the endpoints as per the feedback and comments provided by Eyong.
+Please feel free to add if I miss something.
+
+Next Meeting:
+Date: 29/07/2024
+Minutes Prepared by: Sayli

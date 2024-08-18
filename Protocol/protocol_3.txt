@@ -1,0 +1,41 @@
+Minutes of Meeting
+Date: 25/07/2024
+Time: 13:00 - 16:15
+Attendees:
+Lasse, Delo, Sayli
+Points that we discussed
+
+1. Review and merging of the Mission Statement
+Over night we all rethought about the general goal 
+wich each of us expect from the Quiz App.
+We compared and adjusted the Statement depenging of 
+our thoughts.
+
+2. Reconsidering Mission Objectives
+We realized that we misphrased them
+and formulated them new 
+
+3. Functional and Non-functional requirements
+We established espacially functional requirements
+and used Consumer-stories to do so.
+As well we formulated our main Non-functional requirements.
+
+4. Normalization of the Database
+We run our Database through the Normalization process.
+Some minor adjustments had to be made where the major ones 
+where the creation of two aditional tables to match N3.
+
+5. API Design
+We discussed how to properly Design our API.
+As we did we relized lots of misunderstanding of doing so.
+After an Q&A qith Eyong we were able to build two of them.
+
+Contributing till tomorrow
+
+Lasse: correction of the Database schema 
+
+Sayli & Delo: continuing on the API design
+
+Next Meeting:
+Date: 26/07/2024
+Minutes Prepared by: Lasse

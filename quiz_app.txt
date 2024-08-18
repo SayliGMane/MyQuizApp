@@ -1,0 +1,201 @@
+Quiz App
+
+Functional requirements
+
+As a user, I want to register to the quizapp.
+	- Object: user
+	- Action: registration
+	- Reason: to enroll to the quizapp
+	
+As a user, I want to sign in to the quizapp.
+	- Object: user
+	- Action: signing in
+	- Reason: to see my userprofile
+	
+As a user, I try a quiz to test my knowledge.
+	- Object: user
+	- Action: try a quiz
+	- Reason: test my knowledge
+	
+As a user, I retried a quiz to see if I increased my score.
+	- Object: user
+	- Action: retried the quiz
+	- Reason: to see progress
+	
+As a user, I played a quiz in order to recognize my weaknesses and get access to related self study links.
+	- Object: user
+	- Action: played a quiz
+	- Reason: to improve my knowledge
+
+As a user, I can attempt the quiz as guest user.
+	- Object: user
+	- Action: play a quiz
+	- Reason: user would like to give a try.
+
+As a user, I can select the topic of my choice.
+	- Object: user
+	- Action: select the topic of the quiz
+	- Reason: to improve my knowledge about specific topic	
+
+As a user, I can select the difficult of my choice.
+	- Object: user
+	- Action: select the difficulty of the quiz
+	- Reason: to get more\less challenging question		
+
+As a user, I want to see my ranking in the quiz app.
+	- Object: user
+	- Action: Finish the session
+	- Reason: to compare his knowledge or score with other players	
+
+	
+--------------------------------------------------------
+
+Non-functional requirements
+
+- Using REST-FULL API instead of Templates in order to simplify the access to the app with different devices.
+- To insure privacy for a personal profile temporary token based login system has to be use.
+
+______________________________________________________________
+
+
+Tools
+
+- Django
+- Django REST framework
+- Postgresql
+- Python
+- StarUML
+- (front-end?)
+
+--------------------------------------------------------------
+
+sources
+
+- pluralsight (inspiration)
+______________________________________________________________
+
+Mission Statement
+
+An web application where you are able to go through a quiz related to selectable, coding based questions.
+The application will able to to allow users to login and when they want to try a certain topic (by default a randomised quiz all topics included) they can select it and go trough a predefined amount of questions (maybee 10).
+Depending on your answers you achieve a score which will be displayed in your profile. When a question is to difficult you can use hints wich can lead you to the correct answer but also limit the maximum amount of points for this question.
+Each quiz result will be stored in a table(user_question).
+
+--------------------------------------------------
+
+Mission Objective
+
+- To get the usernames along with their scores 
+
+- To get usernames enrolled for the current month 
+
+- To get all personal scores in relation
+
+- To get the total high score
+
+- How many times the user attempted the quiz
+
+- Which topic is requested most
+
+__________________________________________________________
+
+
+Database
+-a table for the questions with all answer possibilities
+-a table where the users will be stored
+-a table which stores the user, the selected quiz and the date when it was done
+
+---------------------------------------------------
+
+Schema Database
+
+- user (username, first_name, last_name)
+	username (VARCHAR(20), PRIMARY KEY)
+	first_name (VARCHAR(50), NOT NULL)
+	last_name (VARCHAR(50), NOT NULL)
+		
+- question (id, question, topic, difficulty, right_answer, wrong_answer, score, hint)
+	id (SERIAL, PRIMARY KEY)
+	question (TEXT, NOT NULL)
+	topic (INT, REFERENCES topics(id)) -> default
+	level_ (INT, REFERENCES difficulty(level_id)) -> default
+	right_answer (ARRAY, NOT NULL)
+	wrong_answer (ARRAY, NOT NULL)
+	hint (ARRAY)
+	score (SMALLINT, NOT NULL)
+	
+- session ( id, asked_user, question_id, correct, hint)
+	id (SERIAL, PRIMARY KEY)
+	user (VARCHAR(20), REFERENCES user(username))
+	question (INT REFERENCES, question(id))
+	correct (BOOL, NOT NULL)
+	hint (BOOL, NOT NULL)
+
+--------------------------------------------------
+
+Django
+
+Create Constances for difficulty(levels) and topics instead of tables!
+
+--------------------------------------------------
+
+Views
+- homepage
+- login
+- registration
+- user profile
+- quiz page 
+
+__________________________________________________________________________
+
+
+Questions
+
+"What is the process of creating a new object from a class called instantiation?": [
+        "Encapsulation",
+        "Abstraction",
+        "Instantiation",],#
+
+"What is the purpose of a constructor in a class (Python uses init)?": [
+        "To initialize the attributes of an object when it's created.",#
+        "To define the class name.",
+        "To define methods that can be called on objects."],
+
+"Which of the following is the correct syntax for defining a method in Python?": [
+        "method methodName(parameters):",
+        "def methodName(parameters):",#
+        "methodName(parameters) = { ... }" ],
+
+"What is the difference between a class and an object?": [
+         "A class is a blueprint, while an object is an instance created from that blueprint.",#
+         "There is no difference; they are the same thing.",
+         "A class is a specific object, while an object is a general concept."],
+
+"What is the purpose of a constructor in a class (Python uses init)?": [
+         "To define the class name.",
+         "To initialize the attributes of an object when it's created.",#
+         "To define methods that can be called on objects."],
+
+"Which of the following is an advantage of using OOP?": [
+         "Improved code reusability and maintainability.",#
+         "More complex syntax compared to procedural programming.",
+         "Less efficient for simple tasks."],
+
+"What is the full meaning of OOP": [
+         "Object Oriented Programming",#
+         "Object of the Program",
+         "Only Object Passes"],
+
+"What does 'self' represent in OOP": [
+         "The class",
+         "The method",
+         "The object",],#
+
+"Which of the following is NOT a core principle of Object-Oriented Programming (OOP)": [
+         "Encapsulation",
+         "Procedural Programming"],#
+         
+"What is the keyword used to define a class in Python?": [
+         "define",
+         "class", #
+         "create"]

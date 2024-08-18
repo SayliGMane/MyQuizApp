@@ -1,0 +1,25 @@
+Minutes of Meetings
+Date: 24.07.2024
+Time 14:45 to 16:00
+Attendees: Lasse, Sayli, Delo
+Points that we discussed:
+1. Mission Statement
+- To provide an engaging and educational platform that helps users enhance their Python programming skills and practice through a fun and challenging quiz game.
+2. Mission Objective
+- create App that makes coding fun to learn
+- enhance programming learning level through different topics
+-  helping users to continuously improve their coding abilities and achieve their learning goals.
+3. discussing certain details
+- Question
+- Topics
+4. modifying prototype data
+5. creating visual schema
+- Views
+    - homepage
+    - login
+    - registration
+    - user profile
+    - quiz page
+Next Meeting:
+Date: 25/07/2024
+Minutes Prepared by: Delo

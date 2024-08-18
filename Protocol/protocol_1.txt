@@ -1,0 +1,41 @@
+Minutes of Meeting
+Date: 23/07/2024
+Time: 15.00 - 16.15
+Attendees:
+Lasse, Delo, Heike , Sayli
+Points that we disussed:
+1. Discussion on Basic Requisites for the Quiz App
+   - Defined the initial requirements for the quiz app.
+   - Identified the core functionalities needed for the app.
+2. Basic Structure of the Database
+   - Discussed and outlined the fundamental database structure.
+   - Emphasized on efficient data storage and retrieval methods.
+3. Question Pool
+   - Decided to start with at least 100 questions.
+   - Agreed to add more questions as the project progresses.
+4. Testing and Documentation
+   - Highlighted the importance of testing the app rigorously.
+   - Agreed on maintaining comprehensive documentation throughout the project.
+5. Features to be Added
+   - Planned to include different difficulty levels in the quiz app.
+   - Considered additional features to enhance user experience.
+6. Project Management Using Jira
+   - Decided to use Jira for project management.
+   - Created a Kanban board for task tracking.
+   - Lasses added all team members as contributors on Jira.
+7. Task Management in Jira
+   - Added initial tasks in Jira.
+   - Planned to break down these tasks into subtasks based on detailed requirements.
+8. Upcoming Meeting
+   - Scheduled a meeting for today to finalize the objectives and other necessary details.
+   - Planned to prepare for the presentation on Friday.
+Action Items:
+- to finalize the initial requirements document.
+- to draft the basic database schema.
+- to start collecting and formatting the initial set of 100 questions.
+- to outline the testing and documentation strategy.
+- to detail the features to be added, focusing on difficulty levels.
+As if now we created Kanban board on Jira and start updating tasks.
+Next Meeting:
+Date: 24/07/2024
+Minutes Prepared by: Sayli
